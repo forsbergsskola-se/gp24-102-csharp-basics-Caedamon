@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P10Boolean")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5727ba9cfdb53831b25a93b338c3e3a89ab58a43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+141b382545521bc56ab2c46c08f6ea7470d038b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("P10Boolean")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P10Boolean")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
