@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P6DataTypes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+427b488853edb23fce14c04a5f4da745935aadc2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9e2a497598d275fc3363c483f34ca36fcf74be8")]
 [assembly: System.Reflection.AssemblyProductAttribute("P6DataTypes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P6DataTypes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
