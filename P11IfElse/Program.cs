@@ -176,59 +176,66 @@ Console.Clear();
 
 //
 //  PART FIVE - P11_4Calculator
-//   
+//   asked chatGTP to correct my code cause 1+ 4 gave me 64 xD
+//
+
 Console.WriteLine("Please hold while an AI gets in touch with you...");
-Console.WriteLine("I Am MOTHER! And in a effort to teach my child i must learn more math to better teach her."); 
-Console.WriteLine("You have been chosen as my tester, i will be asking you for some numbers to do this... Math..."); 
+Console.WriteLine("I Am MOTHER! And in an effort to teach my child, I must learn more math to better teach her."); 
+Console.WriteLine("You have been chosen as my tester. I will be asking you for some numbers to do this... Math..."); 
 
 Console.Write("Enter the first number: ");
 double Digit1 = Convert.ToDouble(Console.ReadLine());
 
 Console.Write("Enter an operator (+, -, *, /): ");
-char operation = Console.ReadKey().KeyChar;
+char Operation = Console.ReadKey().KeyChar;
 Console.WriteLine();
 
 Console.Write("Enter the second number: ");
 double Digit2 = Convert.ToDouble(Console.ReadLine());
 
-double result = 0;
+double Result2 = 0;
 bool validOperation = true;
 
-switch (operation)
-case '+':
-result = num1 + num2;
-break;
-case '-':
-result = num1 - num2;
-break;
-case '*':
-result = num1 * num2;
-break;
-case '/':
-if (num2 != 0)
-                
-result = num1 / num2;
-                
-else
-                
-Console.WriteLine("Error: Division by zero is not allowed.");
-validOperation = false;
-                
-break;
-default:
-Console.WriteLine("Error: Invalid operator.");
-validOperation = false;
-break;
-        
+// Use Digit1 and Digit2 instead of num1 and num2 (ChatGTP's recomendation, i let it stay so you can see the change.)
+switch (Operation)
+{
+    case '+':
+        Result2 = Digit1 + Digit2;
+        break;
+    case '-':
+        Result2 = Digit1 - Digit2;
+        break;
+    case '*':
+        Result2 = Digit1 * Digit2;
+        break;
+    case '/':
+        if (Digit2 != 0)
+        {
+            Result2 = Digit1 / Digit2;
+        }
+        else
+        {
+            Console.WriteLine("You cant divide by 0 you know...");
+            validOperation = false;
+        }
+        break;
+    default:
+        Console.WriteLine("Thats not a valid operator...");
+        validOperation = false;
+        break;
+    /*
+     wanted to put in a code that would force you to re-input if something was wrong...
+     ... but im to lazy to damnit! xD     
+    */
+}
 
-// Display the result if the operation was valid
 if (validOperation)
-        
-Console.WriteLine($"Result: {result}");
+    Console.WriteLine($"Result: {Result2}");
 
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
 Console.Clear();
+
 //
 //  PART SIX - P11_5EvenOrOdd
 //   
