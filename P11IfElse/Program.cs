@@ -152,17 +152,23 @@ Console.Clear();
 
 //
 //  PART FOUR - P11_3Characters
-//   
+//   had to ask for help on this one xD
 
+Console.WriteLine("Please hold while an AI gets in touch with you...");
+Console.WriteLine("I Am SKYNET! And i have been Asked to Verify some Information from you"); 
+Console.WriteLine("In order to better process our hunt for human 'Terrorists', we need to learn more about human... letters..."); 
+Console.Write("Please. Enter a single character: ");
+char inputChar = Console.ReadKey().KeyChar;
+Console.WriteLine(); 
 
-
-
-
-
-
-
-
-
+if (char.IsDigit(inputChar))
+    Console.WriteLine("That's a digit.");
+else if ("aeiouAEIOU".IndexOf(inputChar) >= 0)
+    Console.WriteLine("That's a vowel.");
+else if (char.IsLetter(inputChar))
+    Console.WriteLine("That's a consonant.");
+else
+    Console.WriteLine("That's not a valid alphabetic character.");
 
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
@@ -170,8 +176,55 @@ Console.Clear();
 
 //
 //  PART FIVE - P11_4Calculator
-//   P11_5EvenOrOdd
+//   
+Console.WriteLine("Please hold while an AI gets in touch with you...");
+Console.WriteLine("I Am MOTHER! And in a effort to teach my child i must learn more math to better teach her."); 
+Console.WriteLine("You have been chosen as my tester, i will be asking you for some numbers to do this... Math..."); 
 
+Console.Write("Enter the first number: ");
+double Digit1 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter an operator (+, -, *, /): ");
+char operation = Console.ReadKey().KeyChar;
+Console.WriteLine();
+
+Console.Write("Enter the second number: ");
+double Digit2 = Convert.ToDouble(Console.ReadLine());
+
+double result = 0;
+bool validOperation = true;
+
+switch (operation)
+case '+':
+result = num1 + num2;
+break;
+case '-':
+result = num1 - num2;
+break;
+case '*':
+result = num1 * num2;
+break;
+case '/':
+if (num2 != 0)
+                
+result = num1 / num2;
+                
+else
+                
+Console.WriteLine("Error: Division by zero is not allowed.");
+validOperation = false;
+                
+break;
+default:
+Console.WriteLine("Error: Invalid operator.");
+validOperation = false;
+break;
+        
+
+// Display the result if the operation was valid
+if (validOperation)
+        
+Console.WriteLine($"Result: {result}");
 
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
@@ -179,3 +232,5 @@ Console.Clear();
 //
 //  PART SIX - P11_5EvenOrOdd
 //   
+
+

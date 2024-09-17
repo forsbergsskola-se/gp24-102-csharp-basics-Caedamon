@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P11IfElse")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0cf31380300f95165480bfd9a86ff0ae74477c81")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18a1ad5419fc59b773e9c51319b1cfb6711d746d")]
 [assembly: System.Reflection.AssemblyProductAttribute("P11IfElse")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P11IfElse")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
