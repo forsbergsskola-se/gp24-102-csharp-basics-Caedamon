@@ -238,6 +238,21 @@ Console.Clear();
 
 //
 //  PART SIX - P11_5EvenOrOdd
-//   
+// isnt this just copy paste of "is age even // odd" part of part 2 ???
+// No unfriendly AI in this one...
+
+Console.WriteLine("Give me a Number!");
+string input = Console.ReadLine();
+while (!int.TryParse(input, out int number))
+{
+    Console.WriteLine("Thats not right... try again! 1 Digit please.");
+    input = Console.ReadLine();
+}
+
+int validNumber = int.Parse(input);
+if (validNumber % 2 == 0)
+    Console.WriteLine("The number is even.");
+else
+    Console.WriteLine("The number is odd.");
 
 
