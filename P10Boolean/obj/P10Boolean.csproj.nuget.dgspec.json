@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P10Boolean\\P10Boolean.csproj": {}
+    "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P10Boolean\\P10Boolean.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P10Boolean\\P10Boolean.csproj": {
+    "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P10Boolean\\P10Boolean.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P10Boolean\\P10Boolean.csproj",
+        "projectUniqueName": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P10Boolean\\P10Boolean.csproj",
         "projectName": "P10Boolean",
-        "projectPath": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P10Boolean\\P10Boolean.csproj",
-        "packagesPath": "C:\\Users\\Froz\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P10Boolean\\obj\\",
+        "projectPath": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P10Boolean\\P10Boolean.csproj",
+        "packagesPath": "C:\\Users\\Frozztie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P10Boolean\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Froz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Frozztie\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
