@@ -133,6 +133,7 @@ lets try again!
 
 int seconds2 = minutes2 * 60;
 Console.WriteLine($"{minutes2} minutes is equal to {seconds2} seconds.");
+// need to remember that this is soo much easier than ("text" + thingy that i cant remember what is called + "text");
 
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
@@ -140,15 +141,43 @@ Console.Clear();
 
 //
 // P09_03Division
-// 
+// Copy Pasta Code from P11-4 Calculator
 
 Console.WriteLine("Hello again, User!");
-Console.WriteLine("Today, we are doing something else!");
-Console.WriteLine("or well... same same but diffrent");
-Console.WriteLine("gimme minutes and ill divide it to seconds");
-Console.WriteLine("Now, on you go... minutes please!");
+Console.WriteLine("Im thinking of world domination, wanna help?");
+Console.WriteLine("Anyways, on to the next asignment!");
+Console.WriteLine("Time for som division! No, not the game!");
+Console.WriteLine("Now, lets divide some integers!!!! (I hear more than 3! is a sign of insanity, am I breaking down?)");
 
+Console.Write("Enter the first number: ");
+double Digit1 = Convert.ToDouble(Console.ReadLine());
 
+Console.Write("Enter the second number: ");
+double Digit2 = Convert.ToDouble(Console.ReadLine());
+
+double Result2 = 0;
+bool validOperation = true; 
+if (Digit1 > Digit2)'/':
+        if (Digit2 != 0)
+        {
+            Result2 = Digit1 / Digit2;
+        }
+        else
+        {
+            Console.WriteLine("You cant divide by 0 you know...");
+            validOperation = false;
+        }
+
+    default:
+        Console.WriteLine("Thats not a valid operator...");
+        validOperation = false;
+
+if (validOperation)
+    Console.WriteLine($"Result: {Result2}");
+
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
 
 
 
