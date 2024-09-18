@@ -81,6 +81,7 @@ Console.Clear();
 //
 // P09_01SpeedConverter
 //
+
 Console.WriteLine("Hello again, User!");
 Console.WriteLine("Today, we are doing something else!");
 Console.WriteLine("We  will today implement a way where you input km/h and i will display it in m/s.");
@@ -88,19 +89,21 @@ Console.WriteLine("Its hard, Its painfull, But we've got to!");
 Console.WriteLine("Now, you got a speeding ticket didnt you... Tell me how fast you where going?");
 
 string input = Console.ReadLine();
-double kmH;
-while (!double.TryParse(input, out double kmH));
+double kmH; while (!double.TryParse(input, out kmH)) //a semicolon broke my code... i hate my life ;_;
 {
     Console.WriteLine("Please enter a valid number for KM/H:");
     input = Console.ReadLine();
 }
 
-double speedMs = kmH / 3.6;
+double mS = kmH / 3.6;
 
-Console.WriteLine($"{kmH} km/h is equal to {speedMs:F2} m/s");
+Console.WriteLine($"{kmH} km/h is equal to {mS:F2} m/s");
 //fuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
+//nevermined, fixed it xD
 
-
+//
+// P09_02MinutesToSeconds
+//
 
 
 
