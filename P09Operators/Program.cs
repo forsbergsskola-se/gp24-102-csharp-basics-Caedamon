@@ -223,9 +223,6 @@ Console.WriteLine("This time we are supposed to calculated the Area of a circle 
 Console.WriteLine("and then display the results");
 Console.WriteLine("But im nopeing out on that for now!");
 
-Console.WriteLine("Press any key to continue...");
-Console.ReadKey();
-Console.Clear();
 /*
  * NOPE! O_o
  * Saving this for later!
@@ -236,6 +233,10 @@ Console.WriteLine($"The area of the circle is: {area:F2}");
 
  * I wonder if that works or not...
  */
+
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
  
 //
 // P09_06Negation
@@ -243,3 +244,16 @@ Console.WriteLine($"The area of the circle is: {area:F2}");
 
 
 Console.WriteLine("Hello again, User!");
+// console filler to be expanded
+Console.Write("Enter an integer: ");
+int Numero = int.Parse(Console.ReadLine());
+int negatedNumber = -Numero;
+Console.WriteLine("The negation of the number is: " + negatedNumber);
+//probably some more but to damn tired to test it out and check if its working or not atm.
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
+ 
+//
+// P09_06Negation
+// 
