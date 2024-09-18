@@ -205,50 +205,41 @@ else
 }
 
 if (validOperation2)
-    Console.WriteLine($"Result: {Result2:F0}");
+Console.WriteLine($"Result: {Result2:F0}");
+//the only diffrence in this code, and 03, is a damn :F0... o_O
+//is this even legal? D=
 
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
 Console.Clear();
 
+//
+// P09_05CircleArea
+// 
 
-/* --- all this is Fredriks Recap comment in the chat... this way i dont have to switch window if i wanna check it all the time xD
- 
-// Slide 9 - Operator Recap:
 
-// doing any mathematical operation is quite easy, and works the same way as you'd expect any mathematical expression outside of code
-// addition can be done this way:
+Console.WriteLine("Hello again, User!");
+Console.WriteLine("This time we are supposed to calculated the Area of a circle using a Float Input for the radios");
+Console.WriteLine("and then display the results");
+Console.WriteLine("But im nopeing out on that for now!");
 
-int one = 1;
-int two = 2;
-int three = one + two; // can be done with two variables
-int threeAgain = one + 2; // or using a variable plus a number directly.
-int threeAgain2 = 1 + 2; // or two numbers directly.
-one += two; // adds one together with two for the sum of 3
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
+/*
+ * NOPE! O_o
+ * Saving this for later!
+Console.Write("Enter the radius of the circle: ");
+float radius = float.Parse(Console.ReadLine());
+float area = (float)(Math.PI * Math.Pow(radius, 2));
+Console.WriteLine($"The area of the circle is: {area:F2}");
 
-// Equally multiplication, subtraction or division are possible the same way:
-
-int four = 4;
-int fourTimesTwo = four * 2;
-float fourDividedByThree = four / 3f; // watch out, dividing two whole numbers can result in loss of precision, specify one as float or double
-int negativeOne = one - two;
-
-// Modulo operator (the percent sign %) is used to get the remainder of a division
-int remainderOf = 10 % 3; // equals 1 as 3*3+1 = 10
-// It can also be used to determine if a number is odd or even by using number % 2
-int remainderOfModulo = 9 % 2;
-bool isOdd = remainderOfModulo > 0;
-
-if (isOdd) {
-    Console.WriteLine("The number is odd!");
-} else if (!isOdd) {
-    Console.WriteLine("The number is even!");
-}
-
-// Some smart operators can help you write less code like the pre and post increment / decrement operators.
-// You use them as follows:
-int nine = 9;
-Console.WriteLine($"Incrementing AFTER I read the value of Nine: {nine++}");
-Console.WriteLine($"Reading the value of Nine: {nine}");
-Console.WriteLine($"Decrementing Nine BEFORE reading it: {--nine}");
+ * I wonder if that works or not...
  */
+ 
+//
+// P09_06Negation
+// 
+
+
+Console.WriteLine("Hello again, User!");
