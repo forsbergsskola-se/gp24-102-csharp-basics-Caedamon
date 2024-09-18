@@ -255,5 +255,46 @@ Console.ReadKey();
 Console.Clear();
  
 //
-// P09_06Negation
+// P09_07Product
 // 
+
+/*
+ * Develop a program that takes two integers as input and calculates their product using the multiplication operator.
+
+Input: 11, 4
+Output: 44
+ */
+
+//
+// P09_08BMI
+//  
+
+/*
+ * Develop a program that calculates the BMI of a person using their weight in kilograms and height in meters. Display the BMI value. (probably requires google for the Maths)
+
+Input: 70, 1,82
+Output: 21,13...
+ */
+
+//
+// P09_09Hypotenuse 
+// 
+
+/*
+ * Develop a program that calculates the length of the hypotenuse of a right triangle using the lengths of the other two sides as inputs. Display the result.* (requires Google for the Square Root)
+
+Input: 3, 4
+Output: 5
+P09_10Second
+ */
+
+//
+// P09_10SecondsToMinutes
+// 
+/*
+ * Write a program that takes an integer input representing seconds and converts it to minutes and remaining seconds, then displays the result.
+
+Input: 111
+Output: 1 minute(s) and 51 second(s)
+ */
+
