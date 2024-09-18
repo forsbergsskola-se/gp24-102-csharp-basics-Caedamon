@@ -3,11 +3,11 @@
 /*
  https://github.com/marczaku/102-csharp-basics/tree/main/09-operators
  */
-
+// theres to much damn green text in this document D=
 
 Console.WriteLine("Hello, User!");
 Console.WriteLine("Today, we are doing something, Magical!");
-Console.WriteLine("We! or well, to be precise, I");
+Console.WriteLine("We! or well, to be precise, I, your semi 'friendly' Artificial Overlord");
 Console.WriteLine("Will be transforming seconds that YOU give me");
 Console.WriteLine("Into Days, Hours, Minutes and Seconds!");
 Console.WriteLine("So please, Do give me a number of seconds :)");
@@ -22,8 +22,25 @@ while (!int.TryParse(number, out totalSeconds))
 }
 //honestly, i still cant figure out why this works xD
 // im way to used to using Gdot i think O_o
-// btw totalSeconds = https://learn.microsoft.com/en-us/dotnet/api/system.timespan.totalseconds?view=net-8.0
-// kinda wish that was in the help document on upg-9 =P
+
+/*
+btw totalSeconds = https://learn.microsoft.com/en-us/dotnet/api/system.timespan.totalseconds?view=net-8.0
+kinda wish that was in the help document on upg-9 =P
+Im pretty sure that what you *want* us to do in this assignment is using division and not what im doing below.
+Pseudo Code for what i THINK you acctually want, is something like
+Int = gief [seconds]
+Divide seconds by 60 to get [mins]
+equalise [mins] to lose the [eccess_seconds]
+
+Divide mins by 60 to get [hours]
+equalise [hours] to lose the [eccess_mins]
+
+Divide hours by 24 to get [days]
+equalise [days] to lose the [eccess_hours]
+
+print [days],[hours],[mins],[seconds]
+
+*/
 
 int days = totalSeconds / (24 * 3600); 
 totalSeconds %= 24 * 3600;             
@@ -44,10 +61,18 @@ Console.WriteLine($"{days}.{hours:D2}:{minutes:D2}:{seconds:D2}");
 /* double totalDays = days + (hours / 24.0) + (minutes / 1440.0) + (seconds / 86400.0);
  i tried both of this and the one below, and i prefer days/mins/s but... im not sure wich is right xD
 */
+
 double totalDays = days + (seconds / 86400.0) + (minutes / 1440.0) + (hours / 24.0);
-                   Console.WriteLine($"In total, that's {totalDays} Days."); 
+Console.WriteLine($"In total, that's {totalDays} Days."); 
+//Seconds per day, minuts per day, hours per day
+
 //gona have to figure out how to round that out. i think we did it in one of the previous assignments =/
-//But i cant figure out which one (i also need to learn to stop typing witch when i mean which... damn dyslexia...)
+//But i cant figure out which one (i also need to learn to stop typing witch when i mean which... damn dyslexia...)5
+//Anyways! by rounding out i mean so that theres only x.xx days, and not potentially x.xxxxxxxxxxxxxx days...
+
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
 
 
 
