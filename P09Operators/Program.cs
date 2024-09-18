@@ -270,7 +270,8 @@ Output: 44
 //  
 
 /*
- * Develop a program that calculates the BMI of a person using their weight in kilograms and height in meters. Display the BMI value. (probably requires google for the Maths)
+ * Develop a program that calculates the BMI of a person using their weight in kilograms and height in meters.
+ * Display the BMI value. (probably requires google for the Maths)
 
 Input: 70, 1,82
 Output: 21,13...
@@ -281,11 +282,12 @@ Output: 21,13...
 // 
 
 /*
- * Develop a program that calculates the length of the hypotenuse of a right triangle using the lengths of the other two sides as inputs. Display the result.* (requires Google for the Square Root)
+ * Develop a program that calculates the length of the hypotenuse of a right triangle using the lengths of the other two sides as inputs.
+ * Display the result.* (requires Google for the Square Root)
 
 Input: 3, 4
 Output: 5
-P09_10Second
+
  */
 
 //
@@ -298,3 +300,25 @@ Input: 111
 Output: 1 minute(s) and 51 second(s)
  */
 
+//defnenetely copy pasta with small, small, changes
+
+Console.WriteLine("Hello again, User!");
+Console.WriteLine("Today, we are doing something else!");
+Console.WriteLine("or well... same same but diffrent");
+Console.WriteLine("gimme minutes and ill divide it to seconds");
+Console.WriteLine("Now, on you go... minutes please!");
+
+string number4 = Console.ReadLine();
+int seconds3;
+while (!int.TryParse(number4, out seconds3))
+{
+ Console.WriteLine("FEED ME SEYMORE! err i mean... Write a valid number please!");
+ number4 = Console.ReadLine();
+}
+
+int minutes3 = seconds3 / 60;
+Console.WriteLine($"{seconds3} seconds is equal to {minutes3} minutes.");
+
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
