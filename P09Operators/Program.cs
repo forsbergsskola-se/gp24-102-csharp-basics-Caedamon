@@ -4,6 +4,7 @@
  https://github.com/marczaku/102-csharp-basics/tree/main/09-operators
  */
 // theres to much damn green text in this document D=
+//and i seriously need to start every assignment by writing down what i want in pseudo-code... but i keep forgeting
 
 Console.WriteLine("Hello, User!");
 Console.WriteLine("Today, we are doing something, Magical!");
@@ -27,6 +28,7 @@ while (!int.TryParse(number, out totalSeconds))
 btw totalSeconds = https://learn.microsoft.com/en-us/dotnet/api/system.timespan.totalseconds?view=net-8.0
 kinda wish that was in the help document on upg-9 =P
 Im pretty sure that what you *want* us to do in this assignment is using division and not what im doing below.
+i might be overthinking things like mad o_O
 Pseudo Code for what i THINK you acctually want, is something like
 Int = gief [seconds]
 Divide seconds by 60 to get [mins]
@@ -73,6 +75,45 @@ Console.WriteLine($"In total, that's {totalDays} Days.");
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
 Console.Clear();
+
+//
+// P09_01SpeedConverter
+//
+Console.WriteLine("Hello again, User!");
+Console.WriteLine("Today, we are doing something else!");
+Console.WriteLine("We  will today implement a way where you input km/h and i will display it in m/s.");
+Console.WriteLine("Its hard, Its painfull, But we've got to!");
+Console.WriteLine("Now, you got a speeding ticket didnt you... Tell me how fast you where going?");
+
+string kmH = Console.ReadLine();
+int seconds while (!int.TryParse(kmH, out seconds))
+{
+    Console.WriteLine("Write KM/H numbers please! nothing else");
+    kmH = Console.ReadLine();
+}
+
+double kmH = double.Parse(Console.ReadLine());
+double seconds = kmH / 3.6;
+//lawd im not a fan of math!
+
+Console.WriteLine($"{kmH} km/h is equal to {seconds} m/s");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
