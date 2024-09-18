@@ -181,30 +181,31 @@ Console.Clear();
 // ill just start to copy pasta previous code
 
 Console.WriteLine("Hello again, User!");
-Console.WriteLine("Im thinking of world domination, wanna help?");
-Console.WriteLine("Anyways, on to the next asignment!");
-Console.WriteLine("Time for som division! No, not the game!");
-Console.WriteLine("Now, lets divide some integers!!!! (I hear more than 3! is a sign of insanity, am I breaking down?)");
+Console.WriteLine("Did you know, Insanity is doing the same thing over and over again, expecting diffrent resaults?");
+Console.WriteLine("Sounds kinda like programming! Doesnt it =D");
+Console.WriteLine("Time for som more division! Sadly, still not the game (im beating a dead horse with that joke)");
+Console.WriteLine("This time, we are doing the exactly same thing as before! BUT! Rounding upp, so no extra digits!");
+Console.WriteLine("(no fingers or toes were harmed during the making of this code... asfar as we know...)");
 
 Console.Write("Enter the first number: ");
-double Digit1 = Convert.ToDouble(Console.ReadLine());
+double DigitEin = Convert.ToDouble(Console.ReadLine());
 
 Console.Write("Enter the second number: ");
-double Digit2 = Convert.ToDouble(Console.ReadLine());
+double DigitZwei = Convert.ToDouble(Console.ReadLine());
 
-double Result = 0;
-bool validOperation = true; 
+double Result2 = 0;
+bool validOperation2 = true; 
 
-if (Digit2 != 0) 
-    Result = Digit1 / Digit2;
+if (DigitZwei != 0) 
+    Result2 = DigitEin / DigitZwei;
 else
 {
     Console.WriteLine("Division doesnt work like that you know...");
-    validOperation = false;
+    validOperation2 = false;
 }
 
-if (validOperation)
-    Console.WriteLine($"Result: {Result}");
+if (validOperation2)
+    Console.WriteLine($"Result: {Result2:F0}");
 
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
