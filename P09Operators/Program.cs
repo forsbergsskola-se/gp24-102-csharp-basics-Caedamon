@@ -101,15 +101,32 @@ Console.WriteLine($"{kmH} km/h is equal to {mS:F2} m/s");
 //fuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
 //nevermined, fixed it xD
 
+
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
+
 //
 // P09_02MinutesToSeconds
-//
+// ... err... isnt this... just copy pasta code?
 
+Console.WriteLine("Hello again, User!");
+Console.WriteLine("Today, we are doing something else!");
+Console.WriteLine("or well... same same but diffrent");
+Console.WriteLine("gimme minutes and ill divide it to seconds");
+Console.WriteLine("Now, on you go... minutes please!");
 
+string number3 = Console.ReadLine();
+int minutes2;
+while (!int.TryParse(number3, out minutes2))
+{
+    Console.WriteLine("FEED ME SEYMORE! err i mean... Write a valid number please!");
+    number3 = Console.ReadLine();
+}
+int minutes2 = seconds2 / 60;     
+int seconds2 = minutes2 % 60;     
 
-
-
-
+Console.WriteLine($"Seconds: {seconds2}");
 
 
 
