@@ -32,16 +32,17 @@ i might be overthinking things like mad o_O
 Pseudo Code for what i THINK you acctually want, is something like
 Int = gief [seconds]
 Divide seconds by 60 to get [mins]
-equalise [mins] to lose the [eccess_seconds]
+equalise [mins] to lose the [excess_seconds]
 
 Divide mins by 60 to get [hours]
-equalise [hours] to lose the [eccess_mins]
+equalise [hours] to lose the [excess_mins]
 
 Divide hours by 24 to get [days]
-equalise [days] to lose the [eccess_hours]
+equalise [days] to lose the [excess_hours]
 
 print [days],[hours],[mins],[seconds]
 
+but i cant figure out how to do that without excessive lines of code o_O
 */
 
 int days = totalSeconds / (24 * 3600); 
@@ -65,12 +66,13 @@ Console.WriteLine($"{days}.{hours:D2}:{minutes:D2}:{seconds:D2}");
 */
 
 double totalDays = days + (seconds / 86400.0) + (minutes / 1440.0) + (hours / 24.0);
-Console.WriteLine($"In total, that's {totalDays} Days."); 
+Console.WriteLine($"In total, that's {totalDays:F2} Days."); 
 //Seconds per day, minuts per day, hours per day
 
 //gona have to figure out how to round that out. i think we did it in one of the previous assignments =/
 //But i cant figure out which one (i also need to learn to stop typing witch when i mean which... damn dyslexia...)5
 //Anyways! by rounding out i mean so that theres only x.xx days, and not potentially x.xxxxxxxxxxxxxx days...
+//apparantly, :F2 is the way to go!
 
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
@@ -85,19 +87,18 @@ Console.WriteLine("We  will today implement a way where you input km/h and i wil
 Console.WriteLine("Its hard, Its painfull, But we've got to!");
 Console.WriteLine("Now, you got a speeding ticket didnt you... Tell me how fast you where going?");
 
-string kmH = Console.ReadLine();
-int seconds while (!int.TryParse(kmH, out seconds))
+string input = Console.ReadLine();
+double kmH;
+while (!double.TryParse(input, out double kmH));
 {
-    Console.WriteLine("Write KM/H numbers please! nothing else");
-    kmH = Console.ReadLine();
+    Console.WriteLine("Please enter a valid number for KM/H:");
+    input = Console.ReadLine();
 }
 
-double kmH = double.Parse(Console.ReadLine());
-double seconds = kmH / 3.6;
-//lawd im not a fan of math!
+double speedMs = kmH / 3.6;
 
-Console.WriteLine($"{kmH} km/h is equal to {seconds} m/s");
-
+Console.WriteLine($"{kmH} km/h is equal to {speedMs:F2} m/s");
+//fuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
 
 
 
