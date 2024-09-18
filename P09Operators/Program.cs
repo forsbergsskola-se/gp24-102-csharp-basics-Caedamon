@@ -142,6 +142,7 @@ Console.Clear();
 //
 // P09_03Division
 // Copy Pasta Code from P11-4 Calculator
+//
 
 Console.WriteLine("Hello again, User!");
 Console.WriteLine("Im thinking of world domination, wanna help?");
@@ -155,33 +156,59 @@ double Digit1 = Convert.ToDouble(Console.ReadLine());
 Console.Write("Enter the second number: ");
 double Digit2 = Convert.ToDouble(Console.ReadLine());
 
-double Result2 = 0;
+double Result = 0;
 bool validOperation = true; 
-if (Digit1 > Digit2)'/':
-        if (Digit2 != 0)
-        {
-            Result2 = Digit1 / Digit2;
-        }
-        else
-        {
-            Console.WriteLine("You cant divide by 0 you know...");
-            validOperation = false;
-        }
 
-    default:
-        Console.WriteLine("Thats not a valid operator...");
-        validOperation = false;
+if (Digit2 != 0) 
+    Result = Digit1 / Digit2;
+else
+{
+    Console.WriteLine("Division doesnt work like that you know...");
+    validOperation = false;
+}
 
 if (validOperation)
-    Console.WriteLine($"Result: {Result2}");
+Console.WriteLine($"Result: {Result}");
 
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
 Console.Clear();
 
+//
+// P09_04Remainder
+// honestly, i dont get this one...
+// is it 03 but rounded up?
+// ill just start to copy pasta previous code
 
+Console.WriteLine("Hello again, User!");
+Console.WriteLine("Im thinking of world domination, wanna help?");
+Console.WriteLine("Anyways, on to the next asignment!");
+Console.WriteLine("Time for som division! No, not the game!");
+Console.WriteLine("Now, lets divide some integers!!!! (I hear more than 3! is a sign of insanity, am I breaking down?)");
 
+Console.Write("Enter the first number: ");
+double Digit1 = Convert.ToDouble(Console.ReadLine());
 
+Console.Write("Enter the second number: ");
+double Digit2 = Convert.ToDouble(Console.ReadLine());
+
+double Result = 0;
+bool validOperation = true; 
+
+if (Digit2 != 0) 
+    Result = Digit1 / Digit2;
+else
+{
+    Console.WriteLine("Division doesnt work like that you know...");
+    validOperation = false;
+}
+
+if (validOperation)
+    Console.WriteLine($"Result: {Result}");
+
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
 
 
 /* --- all this is Fredriks Recap comment in the chat... this way i dont have to switch window if i wanna check it all the time xD
