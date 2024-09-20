@@ -62,7 +62,11 @@ Console.WriteLine($"Days: {days}");
 Console.WriteLine($"{days}.{hours:D2}:{minutes:D2}:{seconds:D2}");
 
 /* double totalDays = days + (hours / 24.0) + (minutes / 1440.0) + (seconds / 86400.0);
- i tried both of this and the one below, and i prefer days/mins/s but... im not sure wich is right xD
+ i tried both of this and the one below, and i prefer days/mins/s but... im not sure which is right xD
+ oh and i kinda love :D ... its a smiley! err i mean *cough* a format specifier! this one if i understand it right, pads
+  number that are below a certain amount. so 1 would be padded to 01 and so on, i dont think it removes numbers if its 
+  to high tho
+ https://learn.microsoft.com/en-us/dotnet/standard/base-types/standard-numeric-format-strings
 */
 
 double totalDays = days + (seconds / 86400.0) + (minutes / 1440.0) + (hours / 24.0);
@@ -282,7 +286,8 @@ Output: 21,13...
 // 
 
 /*
- * Develop a program that calculates the length of the hypotenuse of a right triangle using the lengths of the other two sides as inputs.
+ * Develop a program that calculates the length of the hypotenuse of a right triangle using the lengths of the other
+ * two sides as inputs.
  * Display the result.* (requires Google for the Square Root)
 
 Input: 3, 4
@@ -294,7 +299,8 @@ Output: 5
 // P09_10SecondsToMinutes
 // 
 /*
- * Write a program that takes an integer input representing seconds and converts it to minutes and remaining seconds, then displays the result.
+ * Write a program that takes an integer input representing seconds and converts it to minutes and remaining seconds,
+ * then displays the result.
 
 Input: 111
 Output: 1 minute(s) and 51 second(s)
@@ -305,19 +311,21 @@ Output: 1 minute(s) and 51 second(s)
 Console.WriteLine("Hello again, User!");
 Console.WriteLine("Today, we are doing something else!");
 Console.WriteLine("or well... same same but diffrent");
-Console.WriteLine("gimme minutes and ill divide it to seconds");
+Console.WriteLine("gimme seconds and ill transform it to minutes and seconds");
 Console.WriteLine("Now, on you go... minutes please!");
 
 string number4 = Console.ReadLine();
-int seconds3;
-while (!int.TryParse(number4, out seconds3))
+int allOfTheSeconds;
+while (!int.TryParse(number4, out allOfTheSeconds))
 {
  Console.WriteLine("FEED ME SEYMORE! err i mean... Write a valid number please!");
  number4 = Console.ReadLine();
 }
 
-int minutes3 = seconds3 / 60;
-Console.WriteLine($"{seconds3} seconds is equal to {minutes3} minutes.");
+int minutes3 = allOfTheSeconds / 60;
+int theRestOfTheSeconds = allOfTheSeconds % 60;
+Console.WriteLine($"{allOfTheSeconds} seconds is equal to {minutes3} minutes and {theRestOfTheSeconds} seconds.");
+
 
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
