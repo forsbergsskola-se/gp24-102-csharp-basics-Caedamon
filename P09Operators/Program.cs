@@ -268,6 +268,37 @@ Console.Clear();
 Input: 11, 4
 Output: 44
  */
+// ill just start to copy pasta previous code
+
+Console.WriteLine("Hello again, User!");
+Console.WriteLine("Did you know, Insanity is doing the same thing over and over again, expecting different results?");
+/*
+ gonna fix later
+ Console.WriteLine("Sounds kinda like programming! Doesnt it =D");
+Console.WriteLine("Time for som more division! Sadly, still not the game (im beating a dead horse with that joke)");
+Console.WriteLine("This time, we are doing the exactly same thing as before! BUT! Rounding upp, so no extra digits!");
+Console.WriteLine("(no fingers or toes were harmed during the making of this code... asfar as we know...)");
+*/
+
+Console.Write("Enter the first number: ");
+double Multi1 = Convert.ToDouble(Console.ReadLine());
+
+Console.Write("Enter the second number: ");
+double Multi2 = Convert.ToDouble(Console.ReadLine());
+
+double Result3 = 0;
+bool validOperation3 = true; 
+
+if (DigitZwei != 0) 
+ Result3 = Multi1 * Multi2;
+
+if (validOperation2)
+ Console.WriteLine($"Result: {Result3}");
+
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
+
 
 //
 // P09_08BMI
@@ -287,7 +318,7 @@ Output: 21,13...
 
 /*
  * Develop a program that calculates the length of the hypotenuse of a right triangle using the lengths of the other
- * two sides as inputs.
+ two sides as inputs.
  * Display the result.* (requires Google for the Square Root)
 
 Input: 3, 4
@@ -310,7 +341,7 @@ Output: 1 minute(s) and 51 second(s)
 
 Console.WriteLine("Hello again, User!");
 Console.WriteLine("Today, we are doing something else!");
-Console.WriteLine("or well... same same but diffrent");
+Console.WriteLine("or well... same same but different");
 Console.WriteLine("gimme seconds and ill transform it to minutes and seconds");
 Console.WriteLine("Now, on you go... minutes please!");
 
