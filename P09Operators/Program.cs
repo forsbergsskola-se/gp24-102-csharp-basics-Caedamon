@@ -304,14 +304,18 @@ Console.Clear();
 BMI = Weight / (height)2
  */
 
-Console.Write("Enter your weight: ");
+Console.Write("Enter your weight (in kg): ");
 double weight = Convert.ToDouble(Console.ReadLine());
-Console.Write("Enter your height: ");
-double height = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter your height (in cm): ");
+double height1 = Convert.ToDouble(Console.ReadLine());
+double height = height1 / 100;
 double bmi = weight / (height * height);
+
 //how the Fudge do you make a raised 2 o_O
 //nm im just stupid xD
 //damnit... codes wrong...
+//so putting height in cm gives the wrong code.
+//putting it in with a . (mine is 1.88) brakes the code...
 
 Console.WriteLine("BMI: " + bmi);
 Console.WriteLine($"Your BMI is: {bmi:F2}");
@@ -341,7 +345,7 @@ Console.WriteLine("Hello again, User!");
 Console.WriteLine("Today, we are doing something else!");
 Console.WriteLine("or well... same same but different");
 Console.WriteLine("gimme seconds and ill transform it to minutes and seconds");
-Console.WriteLine("Now, on you go... minutes please!");
+Console.WriteLine("Now, on you go... Seconds please!");
 
 string number4 = Console.ReadLine();
 int allOfTheSeconds;
