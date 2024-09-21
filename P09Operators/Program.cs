@@ -301,12 +301,21 @@ Console.Clear();
 //  
 
 /*
- * Develop a program that calculates the BMI of a person using their weight in kilograms and height in meters.
- * Display the BMI value. (probably requires google for the Maths)
-
-Input: 70, 1,82
-Output: 21,13...
+BMI = Weight / (height)2
  */
+
+Console.Write("Enter your weight: ");
+double weight = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter your height: ");
+double height = Convert.ToDouble(Console.ReadLine());
+double bmi = weight / (height * height);
+//how the Fudge do you make a raised 2 o_O
+//nm im just stupid xD
+//damnit... codes wrong...
+
+Console.WriteLine("BMI: " + bmi);
+Console.WriteLine($"Your BMI is: {bmi:F2}");
+
 
 //
 // P09_09Hypotenuse 
