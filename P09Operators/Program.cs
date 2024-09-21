@@ -172,7 +172,7 @@ else
 }
 
 if (validOperation)
-Console.WriteLine($"Result: {Result}");
+ Console.WriteLine($"Result: {Result}");
 
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
@@ -209,7 +209,7 @@ else
 }
 
 if (validOperation2)
-Console.WriteLine($"Result: {Result2:F0}");
+ Console.WriteLine($"Result: {Result2:F0}");
 //the only diffrence in this code, and 03, is a damn :F0... o_O
 //is this even legal? D=
 
@@ -230,11 +230,13 @@ Console.WriteLine("But im nopeing out on that for now!");
 /*
  * NOPE! O_o
  * Saving this for later!
+ * */
 Console.Write("Enter the radius of the circle: ");
 float radius = float.Parse(Console.ReadLine());
 float area = (float)(Math.PI * Math.Pow(radius, 2));
 Console.WriteLine($"The area of the circle is: {area:F2}");
 
+/*
  * I wonder if that works or not...
  */
 
@@ -262,19 +264,13 @@ Console.Clear();
 // P09_07Product
 // 
 
-/*
- * Develop a program that takes two integers as input and calculates their product using the multiplication operator.
-
-Input: 11, 4
-Output: 44
- */
 // ill just start to copy pasta previous code
 
 Console.WriteLine("Hello again, User!");
 Console.WriteLine("Did you know, Insanity is doing the same thing over and over again, expecting different results?");
 /*
  gonna fix later
- Console.WriteLine("Sounds kinda like programming! Doesnt it =D");
+Console.WriteLine("Sounds kinda like programming! Doesnt it =D");
 Console.WriteLine("Time for som more division! Sadly, still not the game (im beating a dead horse with that joke)");
 Console.WriteLine("This time, we are doing the exactly same thing as before! BUT! Rounding upp, so no extra digits!");
 Console.WriteLine("(no fingers or toes were harmed during the making of this code... asfar as we know...)");
@@ -292,7 +288,7 @@ bool validOperation3 = true;
 if (DigitZwei != 0) 
  Result3 = Multi1 * Multi2;
 
-if (validOperation2)
+if (validOperation3)
  Console.WriteLine($"Result: {Result3}");
 
 Console.WriteLine("Press any key to continue...");
@@ -329,15 +325,8 @@ Output: 5
 //
 // P09_10SecondsToMinutes
 // 
-/*
- * Write a program that takes an integer input representing seconds and converts it to minutes and remaining seconds,
- * then displays the result.
 
-Input: 111
-Output: 1 minute(s) and 51 second(s)
- */
-
-//defnenetely copy pasta with small, small, changes
+//definitely copy pasta with small, small, changes
 
 Console.WriteLine("Hello again, User!");
 Console.WriteLine("Today, we are doing something else!");
