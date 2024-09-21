@@ -5,6 +5,7 @@
  */
 // theres to much damn green text in this document D=
 //and i seriously need to start every assignment by writing down what i want in pseudo-code... but i keep forgeting
+// all done and no damn pseudo-code... damnit xD
 
 Console.WriteLine("Hello, User!");
 Console.WriteLine("Today, we are doing something, Magical!");
@@ -323,17 +324,20 @@ Console.WriteLine($"Your BMI is: {bmi:F2}");
 
 //
 // P09_09Hypotenuse 
-// 
+// are all p9 just... math problems? O_o i hate math! [Insert Ugly Crying Here]
 
-/*
- * Develop a program that calculates the length of the hypotenuse of a right triangle using the lengths of the other
- two sides as inputs.
- * Display the result.* (requires Google for the Square Root)
+Console.Write("Enter the length of side a: ");
+double a = Convert.ToDouble(Console.ReadLine());
+Console.Write("Enter the length of side b: ");
+double b = Convert.ToDouble(Console.ReadLine());
+double hypotenuse = Math.Sqrt(a * a + b * b); 
 
-Input: 3, 4
-Output: 5
+Console.WriteLine("The length of the hypotenuse is: " + hypotenuse);
 
- */
+//gona have to fix this up to be pretty later...
+//also gona have to check if its correct xD
+//aahhh the joys of testing!
+
 
 //
 // P09_10SecondsToMinutes
