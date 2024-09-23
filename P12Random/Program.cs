@@ -94,18 +94,18 @@ Console.WriteLine("Today we are doing SPACE BATTLE!");
 Console.WriteLine("The Grid is a 100 by 100 size");
 Console.WriteLine("Now give me a new Seed number!");
 
-string input2 = Console.ReadLine();
-int seed2;
-while (!int.TryParse(input2, out seed2))
+string inputCords = Console.ReadLine();
+int seedCords;
+while (!int.TryParse(inputCords, out seedCords))
 {
  Console.WriteLine("Gonna need a number for that Seed, Human...");
- input2 = Console.ReadLine();
+ inputCords = Console.ReadLine();
 }
 
-Random random2 = new Random(seed2);
+Random randomCords = new Random(seedCords);
 Console.WriteLine("Your BattleShip is on these coordinates!");
-int x = random2.Next(1, 100);
-int y = random2.Next(1, 100);
+int x = randomCords.Next(1, 100);
+int y = randomCords.Next(1, 100);
 
 Console.WriteLine("x = " + x);
 Console.WriteLine("y = " + y);
@@ -124,15 +124,15 @@ Console.WriteLine("Resistance is Futile, you Will be Assimilated!");
 Console.WriteLine("Ima gonna give you a password so you can semi-safely log in to our Borg.Net");
 Console.WriteLine("Now give me a new Seed number that i will base your password off of!");
 
-string input3 = Console.ReadLine();
-int seed3;
-while (!int.TryParse(input3, out seed3))
+string inputPSW = Console.ReadLine();
+int seedPSW;
+while (!int.TryParse(inputPSW, out seedPSW))
 {
  Console.WriteLine("Gonna need a number for that Seed, Human...");
- input2 = Console.ReadLine();
+ inputPSW = Console.ReadLine();
 }
 
-Random random3 = new Random(seed3);
+Random randomPSW = new Random(seedPSW);
 const string chars = "qazwsxedcrfvtgbyhnujmiklpöåäQAZWSXEDCRFVTGBYHNUJMKLPÖÅÄ23456789!#¤%&/()=?`@£$€{[]}^*";
 // 0Oo and I1 removed since they are hard to differentiate between unless you CopyPasta
 
@@ -140,32 +140,37 @@ string password = "";
 
 for (int i = 0; i < 6; i++)
 {
- char randomChar = chars[random3.Next(0, chars.Length)];
+ char randomChar = chars[randomPSW.Next(0, chars.Length)];
  password += randomChar;
 }
 
 Console.WriteLine("Generated Password: " + password);
-Console.WriteLine("Gonna need a number for that Seed, Human...");
+Console.WriteLine("You can now safely log into Borg.Net/AssimilationAcquired");
 
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
 
 //
 // P12_3Random_Item
 // Write a program that simulates item drops in a game. Define five different items, and randomly select an item for the player to acquire.
 //
 
-Console.WriteLine("This is your Friendly AI-Borg");
-Console.WriteLine("We are doing battle today!");
 Console.WriteLine("We Are The Borg.");
-Console.WriteLine("Resistance is Futile, you Will be Assimilated!");
-Console.WriteLine("");
+Console.WriteLine("Resistance is Futile, If you havent already been assimilated, we WILL!");
+Console.WriteLine("As a newly assimilated Borg, we will now grant you the use of a number of items randomly picked by the Borg from our armory!");
+
+Random randomItems = new Random();
+string[] items = { "Phaser Blaster", "Autonomous Regeneration Sequencer", "Multi-Regenerative Shield Array", "Nano-Probes", "Radiation Emitter" }; 
+string droppedItem = items[randomItems.Next(0, items.Length)];
+
+Console.WriteLine("You have been granted the following from the Armory " + droppedItem);
 
 //
 // P12_4Random_Chance
 // Write a program that has a 10% chance of showing a secret message. Otherwise it just displays a message saying to try again.
 //
 
-Console.WriteLine("This is your Friendly AI-Borg");
-Console.WriteLine("We are doing battle today!");
 Console.WriteLine("We Are The Borg.");
-Console.WriteLine("Resistance is Futile, you Will be Assimilated!");
+Console.WriteLine("Resistance is Futile, you are assimilated, right?");
 Console.WriteLine("");
