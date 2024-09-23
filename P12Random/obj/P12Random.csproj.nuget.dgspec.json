@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P12Random\\P12Random.csproj": {}
+    "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P12Random\\P12Random.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P12Random\\P12Random.csproj": {
+    "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P12Random\\P12Random.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P12Random\\P12Random.csproj",
+        "projectUniqueName": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P12Random\\P12Random.csproj",
         "projectName": "P12Random",
-        "projectPath": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P12Random\\P12Random.csproj",
-        "packagesPath": "C:\\Users\\Froz\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P12Random\\obj\\",
+        "projectPath": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P12Random\\P12Random.csproj",
+        "packagesPath": "C:\\Users\\Frozztie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P12Random\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Froz\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Frozztie\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
