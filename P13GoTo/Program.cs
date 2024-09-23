@@ -45,31 +45,34 @@ Console.WriteLine("");
 Console.WriteLine("");
 Console.WriteLine("");
 
-string guess = Console.ReadLine();
-Random random = new Random(guess);
-int myNumber = random.Next(1, 100);
-while (!int.TryParse(guess, out myNumber))
+Console.WriteLine("Time for a Seed Input!");
+string seedIn = Console.ReadLine();
+
+int seed;
+while (!int.TryParse(seedIn, out seed))
 {
     Console.WriteLine("Write a valid number, 1-100 please!");
-    guess = Console.ReadLine();
+    seedIn = Console.ReadLine();
 }
 
+Random random = new Random(guess);
+int myNumber = random.Next(1, 100);
+
 User_Turn:
-Console.WriteLine("Well, Guess my number!");
-int guess = int.Parse(Console.ReadLine());
+Console.WriteLine("Well, Guess my number! its between 1 and a 100.");
+string guessIn = Console.ReadLine();
+int guess;
 
 if (myNumber < guess)
 {    
     Console.WriteLine("Yeah no, thats not it, its a lower number! Try again.");
     goto User_Turn;
 }
-
 if (myNumber > guess)
 {
     Console.WriteLine("Yeah no, thats not it, guess higher. Try again.");
     goto User_Turn;
 }
-
 if (myNumber == guess)
 {
     Console.WriteLine("Thats it! you GOT it! Congratulations!");
