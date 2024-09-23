@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("P09Operators")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b5c2217f2a0c366c8d43e6bd0532ac281418d3c5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d6f49786f46243f825045c6a6b9cbf1a91b81c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("P09Operators")]
 [assembly: System.Reflection.AssemblyTitleAttribute("P09Operators")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
