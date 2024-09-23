@@ -2,48 +2,15 @@
 
 
 
-/* Exercises 13 - Go To
-    Final Exercise
-    Goal
-Output:I have picked a number (1-100). It's your turn to guess it!
-Input:32
-Output:Nope! My number is Greater!
-Input:60
-Output: Nope! My number is Smaller!
-Input:42
-Output: That's the number! Well played!
-Instructions
-    Create a Console Project named P13GoTo How To?
-    Follow the instructions of the pseudo-code below
-    Then see if you can simplify the code a bit
-using if...else if...else
+/* 
 Bonus: Add a Try-Counter. Tell the User, how many guesses he needed.
     Bonus: Add a Maximum Try Number. After 10 attempts, the Player loses.
     PSEUDOCODE:
-myNumber := random number between 1 and 100
-explain rules to user
-USER_TURN:
-ask user for number
-guess := user input
-
-if myNumber is less than guess then
-tell user to guess lower
-    go back to USER_TURN
-    end if
-
-if myNumber is greater than guess then
-tell user to guess higher
-    go back to USER_TURN
-    end if
-
-if myNumber is equal to guess then
-tell user he won
-end if
 */
 
-Console.WriteLine("");
-Console.WriteLine("");
-Console.WriteLine("");
+Console.WriteLine("Hello! Im a program written by Dennis Nedry.");
+Console.WriteLine("Lets try to guess the right number for the Main Security Grid! 1-100");
+Console.WriteLine("Dont worry, its not the real Main Security Grid! wouldnt want those dinosaurs to get out now would we?");
 
 Console.WriteLine("Time for a Seed Input!");
 string seedIn = Console.ReadLine();
@@ -51,26 +18,32 @@ string seedIn = Console.ReadLine();
 int seed;
 while (!int.TryParse(seedIn, out seed))
 {
-    Console.WriteLine("Write a valid number, 1-100 please!");
+    Console.WriteLine("Write a valid Seed number, 1-100 please!");
     seedIn = Console.ReadLine();
 }
 
-Random random = new Random(guess);
+Random random = new Random(seed);
 int myNumber = random.Next(1, 100);
 
 User_Turn:
 Console.WriteLine("Well, Guess my number! its between 1 and a 100.");
-string guessIn = Console.ReadLine();
+string guessInp = Console.ReadLine();
 int guess;
+
+while (!int.TryParse(guessInp, out guess) || guess < 1 || guess > 100)
+{
+Console.WriteLine("Dude, 1-100, please try again!");
+guessInp = Console.ReadLine();
+}
 
 if (myNumber < guess)
 {    
-    Console.WriteLine("Yeah no, thats not it, its a lower number! Try again.");
+    Console.WriteLine("Ah ah ah! You didnt say the magic word! (its lower!) Try again.");
     goto User_Turn;
 }
 if (myNumber > guess)
 {
-    Console.WriteLine("Yeah no, thats not it, guess higher. Try again.");
+    Console.WriteLine("Ah ah ah! You didnt say the magic word! (its higher!) Try again.");
     goto User_Turn;
 }
 if (myNumber == guess)
