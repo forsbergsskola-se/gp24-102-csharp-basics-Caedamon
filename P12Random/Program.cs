@@ -119,11 +119,34 @@ Console.Clear();
 // Design a program that generates a random password with 6 characters, digits or symbols.
 //
 
-Console.WriteLine("This is your Friendly AI-Borg");
-Console.WriteLine("We are doing battle today!");
 Console.WriteLine("We Are The Borg.");
 Console.WriteLine("Resistance is Futile, you Will be Assimilated!");
-Console.WriteLine("Ima gonna give you a password");
+Console.WriteLine("Ima gonna give you a password so you can semi-safely log in to our Borg.Net");
+Console.WriteLine("Now give me a new Seed number that i will base your password off of!");
+
+string input3 = Console.ReadLine();
+int seed3;
+while (!int.TryParse(input3, out seed3))
+{
+ Console.WriteLine("Gonna need a number for that Seed, Human...");
+ input2 = Console.ReadLine();
+}
+
+Random random3 = new Random(seed3);
+const string chars = "qazwsxedcrfvtgbyhnujmiklpöåäQAZWSXEDCRFVTGBYHNUJMKLPÖÅÄ23456789!#¤%&/()=?`@£$€{[]}^*";
+// 0Oo and I1 removed since they are hard to differentiate between unless you CopyPasta
+
+string password = "";
+
+for (int i = 0; i < 6; i++)
+{
+ char randomChar = chars[random3.Next(0, chars.Length)];
+ password += randomChar;
+}
+
+Console.WriteLine("Generated Password: " + password);
+Console.WriteLine("Gonna need a number for that Seed, Human...");
+
 
 //
 // P12_3Random_Item
