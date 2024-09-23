@@ -44,6 +44,10 @@ if (myNumber < guess)
     Console.Clear();
     if (tries >= 10)
         Console.WriteLine("Game over man, Game over! You let the Dinosaurs out!");
+    //return;
+    //break;
+    //Environment.Exit(0);
+    // trying theese 3 breaks the code for some reason.
     else
         Console.WriteLine("Ah ah ah! You didnt say the magic word! (its lower!) Try again.");
     Console.WriteLine("Your guess was: " + guess);
@@ -68,7 +72,7 @@ if (myNumber == guess)
     Console.WriteLine("That's it! you GOT it! Congratulations!");
     Console.WriteLine("It took you: " + tries + " tries!");
 }
-// i put the damn code outside of the loop into a seperate loop even making sure it would *ONLY* be reached once i found the right nummber!
+// i put the damn code outside of the loop into a separate loop even making sure it would *ONLY* be reached once i found the right number!
 // had to ask Fredrik for help on this o_O
 
   
