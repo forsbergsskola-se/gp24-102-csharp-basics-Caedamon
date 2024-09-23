@@ -25,6 +25,8 @@ while (!int.TryParse(seedIn, out seed))
 Random random = new Random(seed);
 int myNumber = random.Next(1, 100);
 
+int tries = 0;
+
 User_Turn:
 Console.WriteLine("Well, Guess my number! its between 1 and a 100.");
 string guessInp = Console.ReadLine();
@@ -36,20 +38,28 @@ Console.WriteLine("Dude, 1-100, please try again!");
 guessInp = Console.ReadLine();
 }
 
+tries++;
+
 if (myNumber < guess)
 {    
     Console.WriteLine("Ah ah ah! You didnt say the magic word! (its lower!) Try again.");
+    Console.WriteLine("You have tried: " + tries + " times now.");
     goto User_Turn;
 }
 if (myNumber > guess)
 {
     Console.WriteLine("Ah ah ah! You didnt say the magic word! (its higher!) Try again.");
+    Console.WriteLine("You have tried: " + tries + " times now.");
     goto User_Turn;
 }
 if (myNumber == guess)
 {
     Console.WriteLine("Thats it! you GOT it! Congratulations!");
-}    
+    Console.WriteLine("It took you: " + tries + " tries!");
+}
+
+if (tries == 10) ;
+Console.WriteLine("Game over man, Game over!");
 
   
 
@@ -58,7 +68,7 @@ if (myNumber == guess)
 // P13_1Dollars
 // Write a Program that asks how many Dollars the user wants. Then, the program proceeds to printing that many Dollar Symbols.
 // 
-
+/*
 Console.WriteLine("");
 Console.WriteLine("");
 Console.WriteLine("");
@@ -87,3 +97,4 @@ Console.WriteLine("");
 Console.WriteLine("");
 Console.WriteLine("");
 Console.WriteLine("");
+*/
