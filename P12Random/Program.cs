@@ -60,7 +60,7 @@ for (int i = 0; i < 3; i++)
 Console.ReadKey();
 Console.Clear();
 
-Console.Write("Give me a crit chance between 0,0 (0%) and 1,0 (100%)");
+Console.WriteLine("Give me a crit chance between 0,0 (0%) and 1,0 (100%)");
 double critChance = double.Parse(Console.ReadLine());
 
 Console.WriteLine("Simulating 5 attacks:");
@@ -157,20 +157,52 @@ Console.Clear();
 //
 
 Console.WriteLine("We Are The Borg.");
-Console.WriteLine("Resistance is Futile, If you havent already been assimilated, we WILL!");
+Console.WriteLine("Resistance is Futile, If you havent already been assimilated, you WILL be!");
 Console.WriteLine("As a newly assimilated Borg, we will now grant you the use of a number of items randomly picked by the Borg from our armory!");
+Console.WriteLine("Now give me a new Seed number that i will base your password off of!");
 
-Random randomItems = new Random();
-string[] items = { "Phaser Blaster", "Autonomous Regeneration Sequencer", "Multi-Regenerative Shield Array", "Nano-Probes", "Radiation Emitter" }; 
-string droppedItem = items[randomItems.Next(0, items.Length)];
+string inputArms = Console.ReadLine();
+int seedArms;
+while (!int.TryParse(inputArms, out seedArms))
+{
+ Console.WriteLine("Gonna need a number for that Seed, Human...");
+ inputArms = Console.ReadLine();
+}
 
-Console.WriteLine("You have been granted the following from the Armory " + droppedItem);
+Random randomItems = new Random(seedArms);
+string[] items =
+{
+ "Phaser Blaster, ", 
+ "Autonomous Regeneration Sequencer, ", 
+ "Multi-Regenerative Shield Array, ", 
+ "Nano-Probes, ", 
+ "Radiation Emitter, "
+}; 
+
+int drop = 3;
+
+Console.WriteLine("You have been granted the following from the Armory: ");
+
+for (int i = 0; i < drop; i++)
+{
+ string droppedItem = items[randomItems.Next(0, items.Length)];
+ Console.WriteLine("- " + droppedItem);
+}
+
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
 
 //
 // P12_4Random_Chance
 // Write a program that has a 10% chance of showing a secret message. Otherwise it just displays a message saying to try again.
 //
 
-Console.WriteLine("We Are The Borg.");
-Console.WriteLine("Resistance is Futile, you are assimilated, right?");
-Console.WriteLine("");
+//Console.WriteLine("We Are The Borg.");
+//Console.WriteLine("Resistance is Futile, you are assimilated, right?");
+//Console.WriteLine("");
+
+
+//Console.WriteLine("Press any key to continue...");
+//Console.ReadKey();
+//Console.Clear();
