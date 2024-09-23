@@ -1,14 +1,9 @@
 ﻿
-
-
-
 /* 
 Bonus: Add a Try-Counter. Tell the User, how many guesses he needed.
     Bonus: Add a Maximum Try Number. After 10 attempts, the Player loses.
     PSEUDOCODE:
 */
-
-using System.Xml;
 
 Console.WriteLine("Hello! Im a program written by Dennis Nedry.");
 Console.WriteLine("Lets try to guess the right number for the Main Security Grid! 1-100");
@@ -46,22 +41,22 @@ tries++;
 
 if (myNumber < guess)
 {    
-Console.Clear();
-if (tries >= 10)
-    Console.WriteLine("Game over man, Game over! You let the Dinosaurs out!");
-else
-    Console.WriteLine("Ah ah ah! You didnt say the magic word! (its lower!) Try again.");
+    Console.Clear();
+    if (tries >= 10)
+        Console.WriteLine("Game over man, Game over! You let the Dinosaurs out!");
+    else
+        Console.WriteLine("Ah ah ah! You didnt say the magic word! (its lower!) Try again.");
     Console.WriteLine("Your guess was: " + guess);
     Console.WriteLine("You have tried: " + tries + " times now.");
     goto User_Turn;
 }
 if (myNumber > guess)
 {
-Console.Clear();
-if (tries >= 10)
-    Console.WriteLine("Game over man, Game over! You let the Dinosaurs out!");
-else
-    Console.WriteLine("Ah ah ah! You didnt say the magic word! (its higher!) Try again.");
+    Console.Clear();
+    if (tries >= 10)
+        Console.WriteLine("Game over man, Game over! You let the Dinosaurs out!");
+    else
+        Console.WriteLine("Ah ah ah! You didnt say the magic word! (its higher!) Try again.");
     Console.WriteLine("Your guess was: " + guess);
     Console.WriteLine("You have tried: " + tries + " times now.");
     goto User_Turn;
