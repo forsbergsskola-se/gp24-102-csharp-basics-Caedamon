@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Hello! Im a program written by Dennis Nedry.");
+﻿using System.Net.Http.Headers;
+
+Console.WriteLine("Hello! Im a program written by Dennis Nedry.");
 Console.WriteLine("Lets try to guess the right number for the Main Security Grid! 1-100");
 Console.WriteLine("Dont worry, its not the real Main Security Grid! wouldn't want those dinosaurs to get out now would we?");
 Console.WriteLine("You have ten tries to guess the correct input!");
@@ -108,13 +110,26 @@ Console.Clear();
 // P13_2Triangle
 // Write a program that prints an ASCII Triangle as big as the user desires. Use goto efficiently to write as little code as necessary.
 // 
+
+//Fredriks Code basis.
 Console.WriteLine("Welcome to the Jungle!");
 Console.WriteLine("We got fun and games!");
+Console.WriteLine("Lets Print Some ASCII Triangles!!");
 
-/*
-Console.WriteLine("");
-Console.WriteLine("");
-Console.WriteLine("");
+retry:
+Console.WriteLine("Whats the Size of your Triangle?");
+bool parse = int.TryParse(Console.ReadLine(), out int desiredSize);
+if (!parse)
+{
+    Console.WriteLine("only numericals please");
+    goto retry;
+}
+
+continuation:
+Console.WriteLine(new string('#', desiredSize));
+
+if (desiredSize > 0)
+    goto continuation;
 
 // 
 // P13_3Pattern
@@ -124,4 +139,3 @@ Console.WriteLine("");
 Console.WriteLine("");
 Console.WriteLine("");
 Console.WriteLine("");
-*/
