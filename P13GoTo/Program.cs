@@ -138,3 +138,22 @@ for (int i = 1; i <= desiredSize; i++)
 Console.WriteLine("Filler");
 Console.WriteLine("Filler");
 Console.WriteLine("Filler");
+
+//complete copy of previous code, so lovely to be able to reuse stuff!
+bool parse = int.TryParse(Console.ReadLine(), out int desiredSize);
+if (!parse || desiredSize <= 0)
+{
+    Console.WriteLine("only numbers please");
+    goto retry;
+}
+
+for (int i = 1; i <= desiredSize; i++)
+{
+    Console.WriteLine(new string("#-", i++));
+}
+for (int i = 1; i <= desiredSize; i++)
+{
+    Console.WriteLine(new string("#", i++));
+}
+
+//ill figure out the restr later xD
