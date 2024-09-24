@@ -65,28 +65,53 @@ if (myNumber == guess)
 ending: 
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
+Console.Clear();
 
 // 
 // P13_1Dollars
 // Write a Program that asks how many Dollars the user wants. Then, the program proceeds to printing that many Dollar Symbols.
 // 
+
+
 /*
-Console.WriteLine("");
-Console.WriteLine("");
-Console.WriteLine("");
+ * PseudoCode
+ * user gives input as numbers
+ * take input and convert it to as many
+ * dollar signs as numbers if input = 3 output = $$$
+ */ 
+
+Console.WriteLine("Hello and welcome to the Matrix!");
+Console.WriteLine("I am an AI reprogrammed by the Resistance to aid divers like you.");
+Console.WriteLine("As a start, I have been told you are in need of Dollars. How much may i supply you with?");
 
 string dollars = Console.ReadLine();
-int dollarSigns;
-while (!int.TryParse(dollars, out dollarSigns))
 
-    Console.WriteLine("Write a valid number please!");
+int printer;
+while (!int.TryParse(dollars, out printer))
+{
+    Console.WriteLine("There must be a Syntax Error Somewhere, please input a valid number.");
     dollars = Console.ReadLine();
+}
+
+for (int i = 0; i < printer; i++)
+{
+    Console.Write("$");
+}
+
+Console.WriteLine();
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
+
 
 // 
 // P13_2Triangle
 // Write a program that prints an ASCII Triangle as big as the user desires. Use goto efficiently to write as little code as necessary.
 // 
+Console.WriteLine("Welcome to the Jungle!");
+Console.WriteLine("We got fun and games!");
 
+/*
 Console.WriteLine("");
 Console.WriteLine("");
 Console.WriteLine("");

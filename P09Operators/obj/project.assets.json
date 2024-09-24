@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Frozztie\\.nuget\\packages\\": {}
+    "C:\\Users\\Froz\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P09Operators\\P09Operators.csproj",
+      "projectUniqueName": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P09Operators\\P09Operators.csproj",
       "projectName": "P09Operators",
-      "projectPath": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P09Operators\\P09Operators.csproj",
-      "packagesPath": "C:\\Users\\Frozztie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P09Operators\\obj\\",
+      "projectPath": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P09Operators\\P09Operators.csproj",
+      "packagesPath": "C:\\Users\\Froz\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P09Operators\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Frozztie\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Froz\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
