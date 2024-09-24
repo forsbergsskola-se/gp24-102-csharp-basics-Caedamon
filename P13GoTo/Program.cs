@@ -119,23 +119,22 @@ Console.WriteLine("Lets Print Some ASCII Triangles!!");
 retry:
 Console.WriteLine("Whats the Size of your Triangle?");
 bool parse = int.TryParse(Console.ReadLine(), out int desiredSize);
-if (!parse)
+if (!parse || desiredSize <= 0)
 {
-    Console.WriteLine("only numericals please");
+    Console.WriteLine("only numbers please");
     goto retry;
 }
 
-continuation:
-Console.WriteLine(new string('#', desiredSize));
-
-if (desiredSize > 0)
-    goto continuation;
+for (int i = 1; i <= desiredSize; i++)
+{
+    Console.WriteLine(new string('#', i));
+}
 
 // 
 // P13_3Pattern
 // Write a program that prints the following pretty ASCII pattern of the size that the user desires. Use goto efficiently to write as little code as necessary.
 // 
 
-Console.WriteLine("");
-Console.WriteLine("");
-Console.WriteLine("");
+Console.WriteLine("Filler");
+Console.WriteLine("Filler");
+Console.WriteLine("Filler");
