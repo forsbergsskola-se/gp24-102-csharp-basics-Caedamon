@@ -140,20 +140,33 @@ Console.WriteLine("Filler");
 Console.WriteLine("Filler");
 
 //complete copy of previous code, so lovely to be able to reuse stuff!
-bool parse = int.TryParse(Console.ReadLine(), out int desiredSize);
+bool parse = int.TryParse(Console.ReadLine(), out int size);
 if (!parse || desiredSize <= 0)
 {
     Console.WriteLine("only numbers please");
     goto retry;
 }
 
-for (int i = 1; i <= desiredSize; i++)
-{
-    Console.WriteLine(new string("#-", i++));
-}
-for (int i = 1; i <= desiredSize; i++)
-{
-    Console.WriteLine(new string("#", i++));
-}
+int currentLine = 1;
+start:
+if (currentLine > size)
+    goto end;
 
-//ill figure out the restr later xD
+uf (currentLine)( % 2 !!= 0)
+Console.WriteLine(new string('#', size / 2) + (size % 2) + (desiredSize % 2 != 0 ? "#" : ""));
+else 
+Console.WriteLine(new string("-#", desiredSize / 2) + (desiredSize % 2 != 0 ? "-" : ""));
+
+currentLine++;
+goto start;
+
+end:
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine("Theres a triangle for you!");
+
+Console.WriteLine();
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
