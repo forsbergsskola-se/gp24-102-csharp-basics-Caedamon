@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P11IfElse\\P11IfElse.csproj": {}
+    "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P11IfElse\\P11IfElse.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P11IfElse\\P11IfElse.csproj": {
+    "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P11IfElse\\P11IfElse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P11IfElse\\P11IfElse.csproj",
+        "projectUniqueName": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P11IfElse\\P11IfElse.csproj",
         "projectName": "P11IfElse",
-        "projectPath": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P11IfElse\\P11IfElse.csproj",
-        "packagesPath": "C:\\Users\\Frozztie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Frozztie\\Documents\\[Rider-School]\\gp24-102-csharp-basics-Caedamon\\P11IfElse\\obj\\",
+        "projectPath": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P11IfElse\\P11IfElse.csproj",
+        "packagesPath": "C:\\Users\\Froz\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\gp24-102-csharp-basics-Caedamon\\P11IfElse\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Frozztie\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Froz\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
