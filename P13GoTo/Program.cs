@@ -138,7 +138,9 @@ Console.Clear();
 // P13_3Pattern
 // Write a program that prints the following pretty ASCII pattern of the size that the user desires. Use goto efficiently to write as little code as necessary.
 // 
-
+//deleted redundant comments,
+//see git-push previous git push (Tittle g13 comment stole from fredrik)
+//if you want to see that disaster of a comment fest//code
 string patternOne = "-#-#-#-#-#";
 string patternTwo = "#-#-#-#-#-";
 
@@ -149,7 +151,6 @@ retrial:
 //complete copy of previous code, so lovely to be able to reuse stuff!
 
 Console.WriteLine("Please, type a number.");
-
 bool parsed = int.TryParse(Console.ReadLine(), out int size);
 if (!parsed || size <= 0)
 {
@@ -157,64 +158,14 @@ if (!parsed || size <= 0)
     goto retrial;
 }
 
+int startSize = size;
 
-
-//Stealing from Fredrik!!
-
-Console.WriteLine("What the size of your Square?");
 backTrack:
 Console.WriteLine(size % 2 == 0 ? patternOne : patternTwo);
 
 size--;
 if(size > 0)
     goto backTrack;
-/*
-int currentLine = 1;
 
-
-start:
-if (currentLine > size) goto end;
-*/
-
-//this was broken when i found it, checking it out after i copied it i can see why xD
-//not that i can get it to work... xD
-/*
-if (currentLine % 2 != 0)
-{ 
-Console.WriteLine(new string('#-', size / 2) + (size % 2 != 0 ? '#' : ""));
-}
-else
-{
-Console.WriteLine(new string('-#', size / 2) + (size % 2 != 0 ? '-' : ""));
-}
-*/
-/*
-lets try another way!
-nope...
-string pattern = "";
-for (int i = 0; i < size; i++)
-{
-    if (currentLine % 2 != 0)
-    {
-        pattern += (i % 2 == 0) ? "#-" : "";
-    }
-    else
-    {
-        pattern += (i % 2 == 0) ? "-#" : "";
-    }
-}
-*/
-/*
-Console.WriteLine(pattern);
-
-currentLine++;
-goto start;
-*/
-
-end:
 Console.WriteLine();
 Console.WriteLine("And theres your pattern, youre welcome");
-
-Console.WriteLine("Press any key to continue...");
-Console.ReadKey();
-Console.Clear();
