@@ -157,11 +157,11 @@ if (currentLine > size) goto end;
 //not that i can get it to work... xD
 if (currentLine % 2 != 0)
 { 
-    Console.WriteLine(new string("#-", size / 2) + (size % 2 != 0 ? "#" : ""));
+    Console.WriteLine(new string('#-', size / 2) + (size % 2 != 0 ? '#' : ""));
 }
 else
-{ 
-    Console.WriteLine(new string("-#", size / 2) + (size % 2 != 0 ? "-" : ""));
+{
+    Console.WriteLine(new string('-#', size / 2) + (size % 2 != 0 ? '-' : ""));));
 }
 
 currentLine++;
