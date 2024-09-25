@@ -97,6 +97,8 @@ for (int i = 0; i < printer; i++)
 {
     Console.Write("$");
 }
+//i was so confused her earlier cause it kept printing new lines!
+////felt kinda stupid when i remembers writeline vs write...
 
 Console.WriteLine();
 Console.WriteLine("Press any key to continue...");
@@ -128,6 +130,10 @@ for (int i = 1; i <= desiredSize; i++)
     Console.WriteLine(new string('#', i));
 }
 
+Console.WriteLine("Press any key to continue...");
+Console.ReadKey();
+Console.Clear();
+
 // 
 // P13_3Pattern
 // Write a program that prints the following pretty ASCII pattern of the size that the user desires. Use goto efficiently to write as little code as necessary.
@@ -155,25 +161,31 @@ if (currentLine > size) goto end;
 
 //this was broken when i found it, checking it out after i copied it i can see why xD
 //not that i can get it to work... xD
+/*
 if (currentLine % 2 != 0)
 { 
     Console.WriteLine(new string('#-', size / 2) + (size % 2 != 0 ? '#' : ""));
 }
 else
 {
-    Console.WriteLine(new string('-#', size / 2) + (size % 2 != 0 ? '-' : ""));));
+    Console.WriteLine(new string('-#', size / 2) + (size % 2 != 0 ? '-' : ""));
 }
+*/
+//lets try another way!
+
+string pattern = "";
+for (int i = 0; i < size; i++)
+    pattern += (currentLine % 2 != 0) ? (i % 2 == 0 ? "#" : "-") : (i % 2 == 0 ? "-" : "#");
+Console.WriteLine(pattern);
 
 currentLine++;
 goto start;
 
 end:
-Console.WriteLine();
-Console.WriteLine();
-Console.WriteLine();
-Console.WriteLine("Theres a triangle for you!");
 
 Console.WriteLine();
+Console.WriteLine("And theres your pattern, youre welcome");
+
 Console.WriteLine("Press any key to continue...");
 Console.ReadKey();
 Console.Clear();
