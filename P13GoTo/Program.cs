@@ -1,6 +1,4 @@
-﻿using System.Net.Http.Headers;
-
-Console.WriteLine("Hello! Im a program written by Dennis Nedry.");
+﻿Console.WriteLine("Hello! Im a program written by Dennis Nedry.");
 Console.WriteLine("Lets try to guess the right number for the Main Security Grid! 1-100");
 Console.WriteLine("Dont worry, its not the real Main Security Grid! wouldn't want those dinosaurs to get out now would we?");
 Console.WriteLine("You have ten tries to guess the correct input!");
@@ -139,21 +137,25 @@ Console.WriteLine("Filler");
 Console.WriteLine("Filler");
 Console.WriteLine("Filler");
 
+
+retrial:
 //complete copy of previous code, so lovely to be able to reuse stuff!
 bool parsed = int.TryParse(Console.ReadLine(), out int size);
 if (!parsed || size <= 0)
 {
     Console.WriteLine("only numbers please");
-    goto retry;
+    goto retrial;
 }
 
 int currentLine = 1;
+
 start:
-if (currentLine > size)
-    goto end;
+if (currentLine > size) goto end;
+
 
 //this was broken when i found it, checking it out after i copied it i can see why xD
-if (currentLine % 2 ! != 0)
+//not that i can get it to work... xD
+if (currentLine % 2 != 0)
 { 
     Console.WriteLine(new string("#-", size / 2) + (size % 2 != 0 ? "#" : ""));
 }
