@@ -1,6 +1,7 @@
 ﻿Console.WriteLine("Hello and Welcome User!");
 Console.WriteLine("What is your name?");
 string name = Console.ReadLine();
+Console.Clear();
 Console.WriteLine("Hello " + name + "!");
 Console.WriteLine("I am The artificial intelligence Jianshizi.");
 Console.WriteLine("Which just so happens to also be the original version of the game we are gonna play today! NIM!");
@@ -24,24 +25,26 @@ int takenMatches;
 start:
 Console.WriteLine($"\nCurrent sticks: {totalMatches}");
 if (currentPlayer == 1)
-    Console.WriteLine($"{currentPlayer}, Your Move.");
+{
+    Console.WriteLine("Your move.");
     retry:
-    Console.WriteLine("How many Sticks would you like to draw? (1-3)");
+    Console.WriteLine($"How many Sticks would you like to draw, {name}? (1-3)");
     bool validInput = int.TryParse(Console.ReadLine(), out takenMatches);
     if (!validInput || takenMatches < 1 || takenMatches > 3 || takenMatches > totalMatches)
     {
         Console.WriteLine("Please enter a number between 1 and 3");
         goto retry;
     }
-    else
-    {
-        Console.WriteLine("My turn!");
-        takenMatches = CalculateAIMove(totalMatches);
-        Console.WriteLine($"I've taken {takenMatches} matches!");
-        Console.WriteLine("Press any key to exit...");
-        Console.ReadKey();
-        Console.Clear();
-    }
+}
+else
+{
+    Console.WriteLine("My turn!");
+    takenMatches = CalculateAIMove(totalMatches);
+    Console.WriteLine($"I've taken {takenMatches} matches!");
+    Console.WriteLine("Press any key to exit...");
+    Console.ReadKey();
+    Console.Clear();
+}
 
 totalMatches -= takenMatches;
 if (totalMatches <= 0)
@@ -51,14 +54,15 @@ currentPlayer = (currentPlayer == 1) ? 2 : 1;
 goto start;
 
 end:
+Console.WriteLine();
 if (currentPlayer == 1)
-    Console.WriteLine($"\nPlayer {currentPlayer}, Game over, you took the last match!.");
+    Console.WriteLine($"Game over {name}, you took the last match!");
 else
-    Console.WriteLine($"\nAI {currentPlayer}, You win! I took the last match!.");
+    Console.WriteLine($"Damnit! You win this time {name}! I took the last match!.");
 
-Console.Clear();
 Console.WriteLine("Press any key to exit...");
 Console.ReadKey();
+
 static int CalculateAIMove(int totalMatches)
 {
     int move;
