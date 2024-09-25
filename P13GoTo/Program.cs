@@ -74,11 +74,11 @@ Console.Clear();
 
 
 /*
- * PseudoCode
- * user gives input as numbers
- * take input and convert it to as many
- * dollar signs as numbers if input = 3 output = $$$
- */ 
+* PseudoCode
+* user gives input as numbers
+* take input and convert it to as many
+* dollar signs as numbers if input = 3 output = $$$
+*/ 
 
 Console.WriteLine("Hello and welcome to the Matrix!");
 Console.WriteLine("I am an AI reprogrammed by the Resistance to aid divers like you.");
@@ -139,13 +139,17 @@ Console.Clear();
 // Write a program that prints the following pretty ASCII pattern of the size that the user desires. Use goto efficiently to write as little code as necessary.
 // 
 
-Console.WriteLine("Filler");
-Console.WriteLine("Filler");
-Console.WriteLine("Filler");
+string patternOne = "-#-#-#-#-#";
+string patternTwo = "#-#-#-#-#-";
 
+Console.WriteLine("Well lets print a nice ASCII Square!");
+Console.WriteLine("First ima gonna need a size from you");
 
 retrial:
 //complete copy of previous code, so lovely to be able to reuse stuff!
+
+Console.WriteLine("Please, type a number.");
+
 bool parsed = int.TryParse(Console.ReadLine(), out int size);
 if (!parsed || size <= 0)
 {
@@ -153,36 +157,61 @@ if (!parsed || size <= 0)
     goto retrial;
 }
 
+
+
+//Stealing from Fredrik!!
+
+Console.WriteLine("What the size of your Square?");
+backTrack:
+Console.WriteLine(size % 2 == 0 ? patternOne : patternTwo);
+
+size--;
+if(size > 0)
+    goto backTrack;
+/*
 int currentLine = 1;
+
 
 start:
 if (currentLine > size) goto end;
-
+*/
 
 //this was broken when i found it, checking it out after i copied it i can see why xD
 //not that i can get it to work... xD
 /*
 if (currentLine % 2 != 0)
 { 
-    Console.WriteLine(new string('#-', size / 2) + (size % 2 != 0 ? '#' : ""));
+Console.WriteLine(new string('#-', size / 2) + (size % 2 != 0 ? '#' : ""));
 }
 else
 {
-    Console.WriteLine(new string('-#', size / 2) + (size % 2 != 0 ? '-' : ""));
+Console.WriteLine(new string('-#', size / 2) + (size % 2 != 0 ? '-' : ""));
 }
 */
-//lets try another way!
-
+/*
+lets try another way!
+nope...
 string pattern = "";
 for (int i = 0; i < size; i++)
-    pattern += (currentLine % 2 != 0) ? (i % 2 == 0 ? "#" : "-") : (i % 2 == 0 ? "-" : "#");
+{
+    if (currentLine % 2 != 0)
+    {
+        pattern += (i % 2 == 0) ? "#-" : "";
+    }
+    else
+    {
+        pattern += (i % 2 == 0) ? "-#" : "";
+    }
+}
+*/
+/*
 Console.WriteLine(pattern);
 
 currentLine++;
 goto start;
+*/
 
 end:
-
 Console.WriteLine();
 Console.WriteLine("And theres your pattern, youre welcome");
 
