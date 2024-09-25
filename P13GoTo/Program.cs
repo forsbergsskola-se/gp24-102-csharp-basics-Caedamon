@@ -140,8 +140,8 @@ Console.WriteLine("Filler");
 Console.WriteLine("Filler");
 
 //complete copy of previous code, so lovely to be able to reuse stuff!
-bool parse = int.TryParse(Console.ReadLine(), out int size);
-if (!parse || desiredSize <= 0)
+bool parsed = int.TryParse(Console.ReadLine(), out int size);
+if (!parsed || size <= 0)
 {
     Console.WriteLine("only numbers please");
     goto retry;
@@ -152,10 +152,15 @@ start:
 if (currentLine > size)
     goto end;
 
-uf (currentLine)( % 2 !!= 0)
-Console.WriteLine(new string('#', size / 2) + (size % 2) + (desiredSize % 2 != 0 ? "#" : ""));
-else 
-Console.WriteLine(new string("-#", desiredSize / 2) + (desiredSize % 2 != 0 ? "-" : ""));
+//this was broken when i found it, checking it out after i copied it i can see why xD
+if (currentLine % 2 ! != 0)
+{ 
+    Console.WriteLine(new string("#-", size / 2) + (size % 2 != 0 ? "#" : ""));
+}
+else
+{ 
+    Console.WriteLine(new string("-#", size / 2) + (size % 2 != 0 ? "-" : ""));
+}
 
 currentLine++;
 goto start;
