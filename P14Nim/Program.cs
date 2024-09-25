@@ -12,7 +12,7 @@ Console.WriteLine("You, my dear " + name + ", get to go first!");
 
 
 int totalSticks = 20;
-string currentPlayer = name;
+int  currentPlayer = 1;
 int takenSticks;
 
 start:
@@ -21,29 +21,22 @@ Console.WriteLine($"{currentPlayer}, Your Move.");
 
 retry:
 Console.WriteLine("How many Sticks would you like to draw? (1-3)");
-Console.WriteLine();
+bool validInput = int.TryParse(Console.ReadLine(), out takenSticks);
+if (!validInput || takenSticks < 1 || takenSticks > 3 || takenSticks > totalSticks)
+{
+    Console.WriteLine("Please enter a number between 1 and 3");
+}
 
+totalSticks -= takenSticks;
+if (totalSticks <= 0)
+    goto end;
+
+currentPlayer = (currentPlayer == 1) ? 2 : 1;
+goto start;
 
 end:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Console.WriteLine($"\nPlayer {currentPlayer}, Game over, you took the last match!.");
 
 Console.Clear();
-Console.WriteLine("Game over.");
 Console.WriteLine("Press any key to exit...");
 Console.ReadKey();
