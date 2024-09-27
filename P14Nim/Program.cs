@@ -23,6 +23,13 @@ Random random = new Random();
 
 start:
 Console.WriteLine($"\nCurrent matches: {totalMatches}");
+
+for (int i = 0; i < totalMatches; i++)
+{
+    Console.Write("|");
+}
+Console.WriteLine();
+
 if (currentPlayer == 1)
 {
     Console.WriteLine("Your move.");
@@ -40,7 +47,7 @@ else
     Console.WriteLine("My turn!");
     takenMatches = CalculateAIMove(totalMatches, random);
     Console.WriteLine($"I've taken {takenMatches} matches!");
-    Console.WriteLine("Press any key to exit...");
+    Console.WriteLine("Press any key to continue...");
     Console.ReadKey();
     Console.Clear();
 }
