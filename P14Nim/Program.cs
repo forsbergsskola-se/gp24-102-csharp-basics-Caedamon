@@ -67,16 +67,40 @@ goto start;
 end:
 Console.WriteLine();
 if (currentPlayer == 1)
+{
     Console.WriteLine($"Game over {name}, you took the last match!");
+}
 else
+{
     Console.WriteLine($"Damnit! You win this time {name}! I took the last match!.");
-
+}
 Console.WriteLine("Press any key to exit...");
 Console.ReadKey();
 
+
+//remaking AI, Leaving this as origin AI code... ITS TO DAMN STUPID! xD
+/*
 static int CalculateAIMove(int totalMatches, Random random)
 {
     int move = random.Next(1, Math.Min(4, totalMatches +1));
+    return move;
+}
+*/
+static int CalculateAIMove(int totalMatches, Random random)
+{
+    int move;
+    if (totalMatches == 4)
+    {move = 3}
+    else if (totalMatches == 3) 
+    {move = 2}
+    else if (totalMatches == 3)
+    {move = 1}
+    else if (totalMatches % 4 == 0)
+        move = random.Next(1, 4);
+    else
+    {
+        move = totalMatches ¤ 4;
+    }
     return move;
 }
 
