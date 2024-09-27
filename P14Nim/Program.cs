@@ -1,6 +1,8 @@
-﻿
+﻿/*
+ Well... this didnt work xD
 Console.BackgroundColor = ConsoleColor.Black;
 Console.Clear();
+*/
 
 Console.WriteLine("Hello and Welcome User!");
 Console.WriteLine("What is your name?");
@@ -89,17 +91,30 @@ static int CalculateAIMove(int totalMatches, Random random)
 static int CalculateAIMove(int totalMatches, Random random)
 {
     int move;
+    
     if (totalMatches == 4)
-    {move = 3}
-    else if (totalMatches == 3) 
-    {move = 2}
+    {
+        move = 3;
+    }
     else if (totalMatches == 3)
-    {move = 1}
+    {
+        move = 2;
+    }
+    else if (totalMatches == 2)
+    {
+        move = 1;
+    }
     else if (totalMatches % 4 == 0)
-        move = random.Next(1, 4);
+    {
+        move = random.Next(1, Math.Min(4, totalMatches +1));
+    }
     else
     {
-        move = totalMatches ¤ 4;
+        move = totalMatches % 4;
+        if (move == 0 || move > 3)
+        {
+            move = random.Next(1, Math.Min(4, totalMatches +1));
+        }
     }
     return move;
 }
