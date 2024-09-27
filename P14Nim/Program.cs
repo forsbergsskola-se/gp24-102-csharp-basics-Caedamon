@@ -1,5 +1,6 @@
 ﻿/*
  Well... this didnt work xD
+ apparantly, Ryder (or however you spell it) console window with its mat, grey tone, is classified as black -,,-
 Console.BackgroundColor = ConsoleColor.Black;
 Console.Clear();
 */
@@ -21,12 +22,15 @@ Console.WriteLine("You, my dear " + name + ", get to go first!");
 Console.ReadKey();
 Console.Clear();
 
-
+//basic information the "game" needs to be able to do what i want...
+//not sure i should be making comments like this... is there a point?
 int totalMatches = 20;
 int  currentPlayer = 1;
 int takenMatches;
 Random random = new Random();
 
+
+//The game!
 start:
 UpdateMatchDisplay(totalMatches);
 Console.WriteLine($"\nCurrent matches: {totalMatches}");
@@ -66,6 +70,8 @@ if (totalMatches <= 0)
 currentPlayer = (currentPlayer == 1) ? 2 : 1;
 goto start;
 
+
+//end message
 end:
 Console.WriteLine();
 if (currentPlayer == 1)
@@ -88,6 +94,9 @@ static int CalculateAIMove(int totalMatches, Random random)
     return move;
 }
 */
+
+//slightly less retarded AI -,,-
+//It bugs me enormously that i have to put in so many lines of codes for this!
 static int CalculateAIMove(int totalMatches, Random random)
 {
     int move;
@@ -104,21 +113,13 @@ static int CalculateAIMove(int totalMatches, Random random)
     {
         move = 1;
     }
-    else if (totalMatches % 4 == 0)
+    else
     {
         move = random.Next(1, Math.Min(4, totalMatches +1));
     }
-    else
-    {
-        move = totalMatches % 4;
-        if (move == 0 || move > 3)
-        {
-            move = random.Next(1, Math.Min(4, totalMatches +1));
-        }
-    }
     return move;
 }
-
+// Collors for text =P
 static void UpdateMatchDisplay(int totalMatches)
 {
     if (totalMatches >= 10)
