@@ -74,3 +74,16 @@ static int CalculateAIMove(int totalMatches, Random random)
     int move = random.Next(1, Math.Min(4, totalMatches +1));
     return move;
 }
+
+static void UpdateMatchDisplay(int totalMatches)
+    if (totalMatches >= 10)
+    {
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+    }
+    else if (totalMatches >= 4) Console.ForegroundColor = ConsoleColor.DarkYellow;
+    }
+    else
+    {
+    Console.ForegroundColor = ConsoleColor.DarkRed;
+    }
+}
