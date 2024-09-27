@@ -6,14 +6,12 @@ Console.WriteLine("Hello " + name + "!");
 Console.WriteLine("I am The artificial intelligence Jianshizi.");
 Console.WriteLine("Which just so happens to also be the original version of the game we are gonna play today! NIM!");
 Console.WriteLine("Now, Let me explain the game for you.");
-Console.WriteLine("Press any key to exit...");
 Console.ReadKey();
 Console.Clear();
 Console.WriteLine("We have 20 matches total.");
 Console.WriteLine("Each round Either You, or I, draw one to three of them.");
 Console.WriteLine("The looser is the one whom draws the last match!");
 Console.WriteLine("You, my dear " + name + ", get to go first!");
-Console.WriteLine("Press any key to exit...");
 Console.ReadKey();
 Console.Clear();
 
@@ -21,14 +19,15 @@ Console.Clear();
 int totalMatches = 20;
 int  currentPlayer = 1;
 int takenMatches;
+Random random = new Random();
 
 start:
-Console.WriteLine($"\nCurrent sticks: {totalMatches}");
+Console.WriteLine($"\nCurrent matches: {totalMatches}");
 if (currentPlayer == 1)
 {
     Console.WriteLine("Your move.");
     retry:
-    Console.WriteLine($"How many Sticks would you like to draw, {name}? (1-3)");
+    Console.WriteLine($"How many Matches would you like to draw, {name}? (1-3)");
     bool validInput = int.TryParse(Console.ReadLine(), out takenMatches);
     if (!validInput || takenMatches < 1 || takenMatches > 3 || takenMatches > totalMatches)
     {
@@ -39,7 +38,7 @@ if (currentPlayer == 1)
 else
 {
     Console.WriteLine("My turn!");
-    takenMatches = CalculateAIMove(totalMatches);
+    takenMatches = CalculateAIMove(totalMatches, random);
     Console.WriteLine($"I've taken {takenMatches} matches!");
     Console.WriteLine("Press any key to exit...");
     Console.ReadKey();
@@ -63,12 +62,8 @@ else
 Console.WriteLine("Press any key to exit...");
 Console.ReadKey();
 
-static int CalculateAIMove(int totalMatches)
+static int CalculateAIMove(int totalMatches, Random random)
 {
-    int move;
-    if (totalMatches % 4 == 0)
-        move = 1;
-    else
-        move = totalMatches % 4;
-    return move > 3 ? 3 : move;
+    int move = random.Next(1, Math.Min(4, totalMatches +1));
+    return move;
 }
