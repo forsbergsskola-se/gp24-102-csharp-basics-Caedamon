@@ -1,4 +1,8 @@
-﻿Console.WriteLine("Hello and Welcome User!");
+﻿
+Console.BackgroundColor = ConsoleColor.Black;
+Console.Clear();
+
+Console.WriteLine("Hello and Welcome User!");
 Console.WriteLine("What is your name?");
 string name = Console.ReadLine();
 Console.Clear();
@@ -22,6 +26,7 @@ int takenMatches;
 Random random = new Random();
 
 start:
+UpdateMatchDisplay(totalMatches);
 Console.WriteLine($"\nCurrent matches: {totalMatches}");
 
 for (int i = 0; i < totalMatches; i++)
@@ -76,14 +81,17 @@ static int CalculateAIMove(int totalMatches, Random random)
 }
 
 static void UpdateMatchDisplay(int totalMatches)
+{
     if (totalMatches >= 10)
     {
         Console.ForegroundColor = ConsoleColor.DarkGreen;
     }
-    else if (totalMatches >= 4) Console.ForegroundColor = ConsoleColor.DarkYellow;
+    else if (totalMatches >= 4)
+    {
+        Console.ForegroundColor = ConsoleColor.DarkYellow;
     }
     else
     {
-    Console.ForegroundColor = ConsoleColor.DarkRed;
+        Console.ForegroundColor = ConsoleColor.DarkRed;
     }
 }
