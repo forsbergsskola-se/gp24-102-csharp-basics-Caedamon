@@ -1,0 +1,15 @@
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\bin\Debug\net8.0\P11IfElse.exe
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\bin\Debug\net8.0\P11IfElse.deps.json
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\bin\Debug\net8.0\P11IfElse.runtimeconfig.json
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\bin\Debug\net8.0\P11IfElse.dll
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\bin\Debug\net8.0\P11IfElse.pdb
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\obj\Debug\net8.0\P11IfElse.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\obj\Debug\net8.0\P11IfElse.AssemblyInfoInputs.cache
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\obj\Debug\net8.0\P11IfElse.AssemblyInfo.cs
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\obj\Debug\net8.0\P11IfElse.csproj.CoreCompileInputs.cache
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\obj\Debug\net8.0\P11IfElse.sourcelink.json
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\obj\Debug\net8.0\P11IfElse.dll
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\obj\Debug\net8.0\refint\P11IfElse.dll
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\obj\Debug\net8.0\P11IfElse.pdb
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\obj\Debug\net8.0\P11IfElse.genruntimeconfig.cache
+C:\Users\Frozztie\Documents\[Rider-School]\gp24-102-csharp-basics-Caedamon\P11IfElse\obj\Debug\net8.0\ref\P11IfElse.dll

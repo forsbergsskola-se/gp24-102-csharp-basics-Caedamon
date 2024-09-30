@@ -1,0 +1,15 @@
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\obj\Debug\net8.0\P5Variables.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\obj\Debug\net8.0\P5Variables.AssemblyInfoInputs.cache
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\obj\Debug\net8.0\P5Variables.AssemblyInfo.cs
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\obj\Debug\net8.0\P5Variables.csproj.CoreCompileInputs.cache
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\obj\Debug\net8.0\P5Variables.sourcelink.json
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\bin\Debug\net8.0\P5Variables.exe
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\bin\Debug\net8.0\P5Variables.deps.json
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\bin\Debug\net8.0\P5Variables.runtimeconfig.json
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\bin\Debug\net8.0\P5Variables.dll
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\bin\Debug\net8.0\P5Variables.pdb
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\obj\Debug\net8.0\P5Variables.dll
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\obj\Debug\net8.0\refint\P5Variables.dll
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\obj\Debug\net8.0\P5Variables.pdb
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\obj\Debug\net8.0\P5Variables.genruntimeconfig.cache
+E:\Projects\gp24-102-csharp-basics-Caedamon\P5Variables\obj\Debug\net8.0\ref\P5Variables.dll

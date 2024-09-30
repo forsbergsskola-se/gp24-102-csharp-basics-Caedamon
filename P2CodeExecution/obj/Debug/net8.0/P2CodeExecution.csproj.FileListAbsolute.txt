@@ -1,0 +1,15 @@
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\bin\Debug\net8.0\P2CodeExecution.exe
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\bin\Debug\net8.0\P2CodeExecution.deps.json
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\bin\Debug\net8.0\P2CodeExecution.runtimeconfig.json
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\bin\Debug\net8.0\P2CodeExecution.dll
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\bin\Debug\net8.0\P2CodeExecution.pdb
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\obj\Debug\net8.0\P2CodeExecution.GeneratedMSBuildEditorConfig.editorconfig
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\obj\Debug\net8.0\P2CodeExecution.AssemblyInfoInputs.cache
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\obj\Debug\net8.0\P2CodeExecution.AssemblyInfo.cs
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\obj\Debug\net8.0\P2CodeExecution.csproj.CoreCompileInputs.cache
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\obj\Debug\net8.0\P2CodeExecution.sourcelink.json
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\obj\Debug\net8.0\P2CodeExecution.dll
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\obj\Debug\net8.0\refint\P2CodeExecution.dll
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\obj\Debug\net8.0\P2CodeExecution.pdb
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\obj\Debug\net8.0\P2CodeExecution.genruntimeconfig.cache
+E:\Projects\gp24-102-csharp-basics-Caedamon\P2CodeExecution\obj\Debug\net8.0\ref\P2CodeExecution.dll
